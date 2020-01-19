@@ -1,5 +1,5 @@
 {
-  "name": "pixy-app",
+  "name": "pixi-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "@types/pixi.js": "^5.0.0",
     "pixi.js": "^4.8.9",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",

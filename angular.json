@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pixy-app": {
+    "pixi-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pixy-app",
+            "outputPath": "dist/pixi-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,7 +26,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/pixi.js/dist/pixi.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -63,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pixy-app:build"
+            "browserTarget": "pixi-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "pixy-app:build:production"
+              "browserTarget": "pixi-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pixy-app:build"
+            "browserTarget": "pixi-app:build"
           }
         },
         "test": {
@@ -111,15 +113,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "pixy-app:serve"
+            "devServerTarget": "pixi-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "pixy-app:serve:production"
+              "devServerTarget": "pixi-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "pixy-app"
+  "defaultProject": "pixi-app"
 }
